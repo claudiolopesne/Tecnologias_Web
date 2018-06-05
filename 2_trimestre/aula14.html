@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução ao Javascript</title>
+
+
+    <script src="js/jquery-3.3.1.js"> </script>
+
+    <script>
+
+      //tudo aqui é considerado Javascrit
+      $(document).ready(function(){
+
+        //alert("Tudo beleza!");
+      $("#aba1").click (function()){
+        $("#p1").show();
+        $("#p2").hide();
+        $("#p3").hide();
+
+        });  //Fim do evento click do aba1
+        $("#aba2").click (function()){
+          $("#p2").show();
+          $("#p1").hide();
+          $("#p3").hide();
+
+          });  //Fim do evento click do aba1
+
+      });
+    </script>
+  </head>
+  <body>
+    <h3> Introdução ao jQuery</h3>
+    <a href="#" id="aba1">Aba 1</a>
+    <a href="#" id="aba2">Aba 2</a>
+    <a href="#" id="aba3">Aba 3</a>
+
+    <div id="p1"> IFPR Campus Paranavai
+  </body>
+</html>
