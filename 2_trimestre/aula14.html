@@ -4,37 +4,65 @@
     <meta charset="utf-8">
     <title>Introdução ao Javascript</title>
 
-
+    <!-- Importação do jQuery -->
     <script src="js/jquery-3.3.1.js"> </script>
 
+    <!-- Todo Javascript é utilizado dentro da tag script -->
     <script>
-
-      //tudo aqui é considerado Javascrit
+      // Tudo aqui é considerado Javascript
       $(document).ready(function(){
-
-        //alert("Tudo beleza!");
-      $("#aba1").click (function()){
-        $("#p1").show();
-        $("#p2").hide();
-        $("#p3").hide();
-
-        });  //Fim do evento click do aba1
-        $("#aba2").click (function()){
-          $("#p2").show();
+        alert("Tudo beleza!");
+        // Evento de click no elemento aba1
+        $("#aba1").click(function(){
+          // Tudo que deve ser feito ao clicar no aba1
+          // Esconder o p2 e p3
+          $("#p2").hide();
+          $("#p3").hide();
+          // Mostrar o p1
+          $("#p1").fadeIn();
+        }); // Fim do evento click do aba1
+        // Evento de click no elemento aba1
+        $("#aba2").click(function(){
+          // Tudo que deve ser feito ao clicar no aba1
+          // Esconder o p2 e p3
           $("#p1").hide();
           $("#p3").hide();
-
-          });  //Fim do evento click do aba1
-
+          // Mostrar o p1
+          $("#p2").fadeIn(1500);
+        }); // Fim do evento click do aba1
+        // Evento de click no elemento aba1
+        $("#aba3").click(function(){
+          // Tudo que deve ser feito ao clicar no aba1
+          // Esconder o p2 e p3
+          $("#p1").hide();
+          $("#p2").hide();
+          // Mostrar o p1
+          $("#p3").fadeIn();
+        }); // Fim do evento click do aba1
       });
     </script>
+
+    <style media="screen">
+      #p2, #p3{
+        display: none;
+      }
+    </style>
+
   </head>
   <body>
-    <h3> Introdução ao jQuery</h3>
+
+    <h3>Introdução ao jQuery</h3>
+
     <a href="#" id="aba1">Aba 1</a>
     <a href="#" id="aba2">Aba 2</a>
     <a href="#" id="aba3">Aba 3</a>
 
-    <div id="p1"> IFPR Campus Paranavai
+    <p id="p1">IFPR Campus Paranavaí</p>
+
+    <p id="p2">Tecnologias Web</p>
+
+    <p id="p3">Algoritmos</p>
+
+
   </body>
 </html>
