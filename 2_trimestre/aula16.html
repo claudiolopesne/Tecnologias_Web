@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 16 - Converter string para float/int</title>
+    <script src="js/jquery-3.3.1.js"> </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("button").click(function(event) {
+        /* Act on the event */
+        var num = $("#num1").val();
+        num = parseFloat(num);
+        var dobro = num * 2
+        alert("O dobro de "+num+" é "+dobro);
+
+      });
+        $("button").click(function(event) {
+         var num = $("#num2").val();
+         num = parseFloat(num);
+         var subtrair = num -
+         alert("O dobro de "+num+" é "+dobro);
+
+
+      });
+
+    });
+    </script>
+
+  </head>
+  <body>
+
+    <form action="" method="">
+
+      <input type="number" name="num1" id="num1" />
+      <button type="button" name="button">Dobro</button>
+
+      <input type="number" name="num2" id="num2" />
+      <button type="button" name="button">Menos</button>
+
+    </form>
+
+  </body>
+</html>
